@@ -8,7 +8,7 @@ It grew out of a lifelong affection for Infocom games and the pull to play them 
 
 Cairn is distributed through the Mac App Store.
 
-[Download Cairn on the App Store](https://apps.apple.com/us/search?term=Cairn)
+[Download Cairn on the App Store]([https://apps.apple.com/us/search?term=Cairn](https://apps.apple.com/us/app/cairn-interactive-fiction/id6773716278))
 
 If you need help finding the correct listing, contact [support@ducat.dev](mailto:support@ducat.dev).
 
