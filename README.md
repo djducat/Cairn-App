@@ -51,7 +51,7 @@ For privacy questions, contact [support@ducat.dev](mailto:support@ducat.dev).
 For support, questions, bug reports, or feedback, use GitHub or email:
 
 - [Report an issue](https://github.com/djducat/Cairn-App/issues)
-- [Join a discussion]([https://github.com/djducat/Cairn-App/discussions)
+- [Join a discussion](https://github.com/djducat/Cairn-App/discussions)
 - [Email support](mailto:support@ducat.dev)
 
 When reporting an issue, include:
