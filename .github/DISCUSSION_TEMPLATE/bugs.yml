@@ -50,16 +50,6 @@ body:
       description: From the game's opening banner (e.g. "Serial number 840726").
       placeholder: e.g. 840726
 
-  - type: dropdown
-    id: game-source
-    attributes:
-      label: Story file — Source
-      options:
-        - Bundled with Cairn
-        - Imported file
-    validations:
-      required: true
-
   - type: textarea
     id: reproduce
     attributes:
@@ -126,16 +116,6 @@ body:
       label: Cairn version
       description: See Cairn ▸ About Cairn.
       placeholder: e.g. 2.0.0 (build 2)
-    validations:
-      required: true
-
-  - type: dropdown
-    id: install-source
-    attributes:
-      label: Install source
-      options:
-        - App Store
-        - Direct download
     validations:
       required: true
 
