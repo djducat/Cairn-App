@@ -1,0 +1,44 @@
+title: "Bug Report"
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Cairn Version
+      placeholder: 1.1.1
+
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      placeholder: Zork I, Enchanter, Bureaucracy, etc.
+
+  - type: dropdown
+    id: zmachine
+    attributes:
+      label: Z-Machine Version
+      options:
+        - Z3
+        - Z4
+        - Z5
+        - Z7
+        - Z8
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Transcript or save file
