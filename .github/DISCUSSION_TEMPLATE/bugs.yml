@@ -1,44 +1,146 @@
-title: "Bug Report"
+title: "[Bug Report]: "
 body:
-  - type: input
-    id: version
+  - type: markdown
     attributes:
-      label: Cairn Version
-      placeholder: 1.1.1
-
-  - type: input
-    id: game
-    attributes:
-      label: Game
-      placeholder: Zork I, Enchanter, Bureaucracy, etc.
-
-  - type: dropdown
-    id: zmachine
-    attributes:
-      label: Z-Machine Version
-      options:
-        - Z3
-        - Z4
-        - Z5
-        - Z7
-        - Z8
+      value: |
+        Thanks for taking the time to report a bug in Cairn!
+        Please fill out the sections below so we can reproduce it.
 
   - type: textarea
     id: description
     attributes:
-      label: What happened?
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: input
+    id: game-title
+    attributes:
+      label: Story file — Title
+      description: Which game were you playing?
+      placeholder: e.g. Zork I
+    validations:
+      required: true
+
+  - type: dropdown
+    id: zmachine-version
+    attributes:
+      label: Story file — Z-machine version
+      description: Shown in Cairn's game info.
+      options:
+        - Z3
+        - Z4
+        - Z5
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: release-number
+    attributes:
+      label: Story file — Release number
+      description: From the game's opening banner (e.g. "Release 88").
+      placeholder: e.g. 88
+
+  - type: input
+    id: serial-number
+    attributes:
+      label: Story file — Serial number
+      description: From the game's opening banner (e.g. "Serial number 840726").
+      placeholder: e.g. 840726
+
+  - type: dropdown
+    id: game-source
+    attributes:
+      label: Story file — Source
+      options:
+        - Bundled with Cairn
+        - Imported file
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Open '...'
+        2. Type command '....'
+        3. Click on '....'
+        4. See error
+    validations:
+      required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: What did you expect to happen?
-
-  - type: textarea
-    id: reproduction
-    attributes:
-      label: Steps to reproduce
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
 
   - type: textarea
     id: transcript
     attributes:
-      label: Transcript or save file
+      label: Transcript / commands
+      description: >-
+        If applicable, paste the sequence of commands leading up to the
+        problem, or attach a transcript.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+
+  - type: checkboxes
+    id: saved-game
+    attributes:
+      label: Saved game
+      description: Does the issue involve a saved or restored game?
+      options:
+        - label: Reproducible from a fresh start
+        - label: Only happens after save/restore
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: e.g. 15.5 Sequoia
+    validations:
+      required: true
+
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model / chip
+      placeholder: e.g. MacBook Air, Apple Silicon (M2)
+    validations:
+      required: true
+
+  - type: input
+    id: cairn-version
+    attributes:
+      label: Cairn version
+      description: See Cairn ▸ About Cairn.
+      placeholder: e.g. 2.0.0 (build 2)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-source
+    attributes:
+      label: Install source
+      options:
+        - App Store
+        - Direct download
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
